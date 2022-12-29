@@ -79,7 +79,13 @@ const Testimonial = () => {
       <div className="row">
         {data.map((item, index) => (
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                <h1>data</h1>
+                <div className='content-card'>
+                <img src={item.img} alt="img"  />
+                <p>{item.content}</p>
+                <span className='name'>{item.name}</span>
+                <p>{item.position}</p>
+
+                </div>
             </div>
         ))}
       </div>
