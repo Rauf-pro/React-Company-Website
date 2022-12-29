@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import about from "../../src/image/about.jpg";
+import about from "../../image/about.jpg";
 import { FcSlrBackSide, FcWorkflow, FcShop } from "react-icons/fc";
 
 const About = () => {
