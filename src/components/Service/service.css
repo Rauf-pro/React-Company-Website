@@ -18,6 +18,20 @@
     cursor: pointer;
     border-left: 3px solid purple;
 }
+.service-number{
+    border-radius: 90px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    
+}
+.service-number p{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+}
 .service_item_underline{
     display: block;
     width: 100%;

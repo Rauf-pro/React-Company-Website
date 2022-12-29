@@ -62,6 +62,17 @@ const Service = () => {
     },
   ];
 
+  const colors = [
+    "#CD5C5C",
+    "#6495ED",
+    "#088f8f",
+    "#36ff25",
+    "#e48c6f",
+    "#ab11ce",
+    "#df5be7",
+    "#FFE51E",
+  ];
+
   return (
     <div className="container service-section">
       {/* Section title */}
@@ -74,7 +85,7 @@ const Service = () => {
         {servicedata.map((item, index) => (
           <div className="col-xl-3 col-lg-3 col-md-6 col-sm-12" key={index}>
             <div className="services">
-              <span className="service-number">
+              <span className="service-number" style={{backgroundColor:colors[index]}}>
                 <p>{item.id}</p>
               </span>
 
