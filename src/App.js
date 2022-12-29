@@ -1,11 +1,12 @@
 import React from "react";
+import Home from "./components/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
   return (
     <>
-      <div>App is Navbar branch</div>
-      <div>Different section</div>
-      <div>Mobile view</div>
+      <Navbar/>
+      <Home/>
     </>
   );
 };
