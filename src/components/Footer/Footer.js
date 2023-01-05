@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookSquare } from "react-icons/fa";
-import { BsTwitter } from "react-icons/bs";
+import { FaTwitterSquare } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
@@ -26,7 +26,7 @@ const Footer = () => {
                   <FaFacebookSquare size={30} />
                 </p>
                 <p>
-                  <BsTwitter size={30} />
+                  <FaTwitterSquare size={30} />
                 </p>
                 <p>
                   <FaInstagramSquare size={30} />
