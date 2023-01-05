@@ -6,7 +6,7 @@ import Service from "./components/Service/Service";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Subscription from "./components/Subscription/Subscription";
 import ScrollToTop from "react-scroll-to-top";
-import './App.css'
+import "./App.css";
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <Subscription />
 
       <ScrollToTop
-      color="white"
+        color="white"
         smooth
         height="20"
         width="20"

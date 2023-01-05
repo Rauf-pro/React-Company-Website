@@ -33,3 +33,7 @@
 .navbar-main ul li:hover{
     color: yellow;
 }
+.nav-item .active{
+   
+    color: yellow;
+}
