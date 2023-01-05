@@ -1,6 +1,9 @@
 import React from "react";
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "./feedback.css";
+import Fade from "react-reveal/Fade";
 
 const Feedback = () => {
   const data = [
@@ -95,8 +98,39 @@ const Feedback = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 2,
+    adaptiveHeight: true,
+    initialSlide: 0,
+    autoplay: true,
+    rows: 1,
+    slidesPerRow: 1,
+    // slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <div className="container feedback-slider">
@@ -104,24 +138,27 @@ const Feedback = () => {
         <h5>Feedback</h5>
         <span className="line"></span>
       </div>
-      <Slider {...settings}>
-        <div className="feedback-slide">
+
+      <div className="feedback-slide">
+        <Slider {...settings}>
           {data.map((item, index) => (
-            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-              <div className="card content-slider" key={index}>
-                <img
-                  src={item.img}
-                  alt="slider image"
-                  className="center-image"
-                />
-                <p>{item.content}</p>
-                <h4>{item.name}</h4>
-                <p>{item.position}</p>
+            <Fade left>
+              <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div className="card content-slider" key={index}>
+                  <img
+                    src={item.img}
+                    alt="slider image"
+                    className="center-image"
+                  />
+                  <p>{item.content}</p>
+                  <h4>{item.name}</h4>
+                  <p>{item.position}</p>
+                </div>
               </div>
-            </div>
+            </Fade>
           ))}
-        </div>
-      </Slider>
+        </Slider>
+      </div>
     </div>
   );
 };
