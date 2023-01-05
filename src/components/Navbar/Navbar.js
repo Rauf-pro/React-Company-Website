@@ -74,7 +74,18 @@ const Navbar = () => {
           </Link>
         </li>
 
-        <li className="nav-item">Feedback</li>
+        <li className="nav-item">
+        <Link
+            to="feedback"
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={100}
+          >
+            Feedback
+          </Link>
+        </li>
+       
         <li className="nav-item">Contact</li>
         <li className="nav-item">Subscription</li>
       </ul>

@@ -1,5 +1,6 @@
 .feedback-slider {
     height: 80vh;
+    margin-top: 30px;
 }
 #dark .feedback-slider {
     color: white;
@@ -10,7 +11,8 @@
 .content-slider {
     padding: 10px;
     color: white;
-    background-color: red;
+    background-color: #FF854C;
+    margin: 10px;
     margin-top: 50px;
     text-align: center;
     margin-bottom: 30px;

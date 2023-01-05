@@ -96,7 +96,7 @@ const Feedback = () => {
 
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
     adaptiveHeight: true,
@@ -133,7 +133,7 @@ const Feedback = () => {
     ],
   };
   return (
-    <div className="container feedback-slider">
+    <div className="container feedback-slider" id="feedback">
       <div className="section_title">
         <h5>Feedback</h5>
         <span className="line"></span>
