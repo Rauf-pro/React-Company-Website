@@ -4,10 +4,7 @@ import { BsTwitter } from "react-icons/bs";
 import { FaInstagramSquare } from "react-icons/fa";
 import { BsLinkedin } from "react-icons/bs";
 
-
 import "./footer.css";
-
-
 
 const Footer = () => {
   return (
@@ -26,22 +23,44 @@ const Footer = () => {
               </p>
               <span className="sosial-icons">
                 <p>
-                  <FaFacebookSquare size={30}/>
+                  <FaFacebookSquare size={30} />
                 </p>
                 <p>
-                    <BsTwitter size={30}/>
+                  <BsTwitter size={30} />
                 </p>
                 <p>
-                    <FaInstagramSquare size={30}/>
+                  <FaInstagramSquare size={30} />
                 </p>
                 <p>
-                    <BsLinkedin size={30}/>
+                  <BsLinkedin size={30} />
                 </p>
               </span>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
-          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
+          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div className="footer-service">
+              <h6 style={{ color: "white", marginTop: "20px" }}>Services</h6>
+              <div className="footer-item">
+                <li>Product Sort</li>
+                <li>Media Marketing</li>
+                <li>Innovation</li>
+                <li>Technology</li>
+                <li>Environment</li>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+          <div className="footer-service">
+              <h6 style={{ color: "white", marginTop: "20px" }}>Customer area</h6>
+              <div className="footer-item">
+                <li>Login</li>
+                <li>My Account</li>
+                <li>Wish List</li>
+                <li>FAQ</li>
+                <li>Contact Us</li>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
