@@ -1,0 +1,51 @@
+import React from "react";
+import { FaFacebookSquare } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import { FaInstagramSquare } from "react-icons/fa";
+import { BsLinkedin } from "react-icons/bs";
+
+
+import "./footer.css";
+
+
+
+const Footer = () => {
+  return (
+    <div className="container-fluid footer">
+      <div className="container">
+        <div className="row">
+          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div className="footer-about-section">
+              <h6 style={{ color: "white", marginTop: "20px" }}>About</h6>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                animi cupiditate odit possimus facilis dicta suscipit quae
+                cumque eligendi! Aut culpa ex commodi fugit. Libero aut quae
+                vitae, eum sit ducimus totam non obcaecati earum quos illum quam
+                inventore aliquam.
+              </p>
+              <span className="sosial-icons">
+                <p>
+                  <FaFacebookSquare size={30}/>
+                </p>
+                <p>
+                    <BsTwitter size={30}/>
+                </p>
+                <p>
+                    <FaInstagramSquare size={30}/>
+                </p>
+                <p>
+                    <BsLinkedin size={30}/>
+                </p>
+              </span>
+            </div>
+          </div>
+          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
+          <div className="col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Footer;

@@ -1,0 +1,15 @@
+.footer{
+    height: auto;
+    margin: 0px;
+    background-color: #030749;
+}
+.footer-about-section{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+.sosial-icons{
+    display: flex;
+    color: orange;
+    cursor: pointer;
+    gap: 10px;
+}
