@@ -12,11 +12,13 @@ import "./App.css";
 import Feedback from "./components/Feedback/Feedback";
 import Video from "./components/Video/Video";
 import Career from "./components/Career/Career";
+import NavbarMobileView from "./components/Navbar/NavbarMobileView";
 
 const App = () => {
   return (
     <>
       <Navbar />
+      <NavbarMobileView/>
       <Home />
       <About />
       <Service />
