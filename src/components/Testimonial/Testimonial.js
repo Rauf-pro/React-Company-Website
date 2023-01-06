@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Fade from "react-reveal/Fade";
 import "./testimonial.css";
 
 const Testimonial = () => {
@@ -103,18 +104,20 @@ const Testimonial = () => {
       </div>
       <div className="row">
         {data.slice(0, showMorePost).map((item, index) => (
-          <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
-            <div
-              className={index === 0 ? "marked-content-card" : "content-card"}
-            >
-              <img src={item.img} alt="img" />
-              <p>{item.content}</p>
-              <p>
-                <span className="name">{item.name}</span>
-              </p>
-              <p>{item.position}</p>
+          <Fade left>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
+              <div
+                className={index === 0 ? "marked-content-card" : "content-card"}
+              >
+                <img src={item.img} alt="img" />
+                <p>{item.content}</p>
+                <p>
+                  <span className="name">{item.name}</span>
+                </p>
+                <p>{item.position}</p>
+              </div>
             </div>
-          </div>
+          </Fade>
         ))}
       </div>
       {showMorePost >= data.length ? null : (

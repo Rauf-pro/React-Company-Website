@@ -1,5 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
+import Zoom from "react-reveal/Zoom";
 import "./video.css";
 
 const Video = () => {
@@ -55,21 +56,23 @@ const Video = () => {
       </div>
       <div className="row">
         {data.map((item, index) => (
-          <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
-            <div className="video-details" key={index}>
-              <ReactPlayer
-                url={item.url}
-                controls
-                playing={false}
-                width="auto"
-                height="250"
-              />
-              <div className="video-content">
-                <h6>{item.title}</h6>
-                <p>{item.content}</p>
+          <Zoom>
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div className="video-details" key={index}>
+                <ReactPlayer
+                  url={item.url}
+                  controls
+                  playing={false}
+                  width="auto"
+                  height="250"
+                />
+                <div className="video-content">
+                  <h6>{item.title}</h6>
+                  <p>{item.content}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </Zoom>
         ))}
       </div>
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineTwitter } from "react-icons/ai";
 import "./team.css";
-import Fade from "react-reveal/Fade";
+import Fade from 'react-reveal/Fade';
 
 const Team = () => {
   const data = [
