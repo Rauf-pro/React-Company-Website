@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import { FaLowVision } from 'react-icons/fa';
 import './career.css';
 import DataInfo from './DataInfo';
+import Pagination from '../Pagination/Pagination';
 
 const Career = () => {
     const url = "https://jsonplaceholder.typicode.com/posts";
@@ -38,7 +39,7 @@ const Career = () => {
     useEffect(()=>{
       loadPostData();
     },[]);
-    
+
   return (
     <div className='container career'>
         <div className="section_title">
@@ -53,6 +54,9 @@ const Career = () => {
                {/* <DataInfo title={item.title} body={item.body}/> */}
             </div>
          ))}
+      </div>
+      <div className='pagination-details'>
+        <Pagination pageCount={pageCount} handlePageClick={handlePageClick}/>
       </div>
     </div>
   )
