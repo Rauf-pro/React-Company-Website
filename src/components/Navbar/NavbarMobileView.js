@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-scroll";
 import './navbarmobileview.css';
@@ -6,13 +6,17 @@ import './navbarmobileview.css';
 
 
 const NavbarMobileView = () => {
+    const [open, setOpen] = useState(false);
+
+    const handleNavbarOpen = () => {
+        setOpen(!open)
+    }
   return (
     <div className='responsive-mobile-view'>
         <div className="container-fluid mobile-view-header">
-           <p><GiHamburgerMenu size={25}/></p>
+           <p><GiHamburgerMenu size={25} onClick={handleNavbarOpen}/></p>
         </div>
-
-        <div className='mobile-nav'>
+        {open ? (<div className='mobile-nav'>
         <ul>
         <li className="nav-item">
           <Link to="home" spy={true} smooth={true} offset={100} duration={100}>
@@ -102,7 +106,8 @@ const NavbarMobileView = () => {
         <li className="nav-item">Contact</li>
         <li className="nav-item">Subscription</li>
       </ul>
-        </div>
+        </div>) : null}
+        
     </div>
   )
 }
