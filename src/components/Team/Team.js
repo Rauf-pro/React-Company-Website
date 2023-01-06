@@ -64,8 +64,8 @@ const Team = () => {
       <div className="row">
         {data.map((item, index) => (
           <Fade right>
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
-              <div className="card team-members-item">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+              <div className="card team-members-item" key={index}>
                 <img src={item.image} alt="team-img" />
                 <div className="team-info">
                   <h6>{item.name}</h6>

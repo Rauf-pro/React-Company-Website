@@ -11,6 +11,7 @@ import ScrollToTop from "react-scroll-to-top";
 import "./App.css";
 import Feedback from "./components/Feedback/Feedback";
 import Video from "./components/Video/Video";
+import Career from "./components/Career/Career";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Home />
       <About />
       <Service />
+      <Career/>
       <Video/>
       <Team/>
       <Testimonial />
