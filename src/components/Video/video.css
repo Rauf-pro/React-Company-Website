@@ -1,7 +1,13 @@
-.video{
+.video {
     height: 900px;
+    margin-top: 20px;
 }
-.video-details{
+@media (max-width: 1000px) {
+    .video {
+        height: auto;
+    }
+}
+.video-details {
     margin-top: 15px;
 
     box-shadow: 15px 9px 9px -2px rgba(230, 224, 224, 0.86);
@@ -11,7 +17,7 @@
     border-radius: 10px;
 }
 
-.video-details:hover{
+.video-details:hover {
     box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -webkit-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
     -moz-box-shadow: -6px 11px 5px -4px rgba(0, 0, 0, 0.42);
@@ -19,6 +25,6 @@
     cursor: pointer;
     border-bottom: 3px solid purple;
 }
-.video-content{
+.video-content {
     padding: 15px;
 }
