@@ -21,7 +21,7 @@ const Footer = () => {
                 vitae, eum sit ducimus totam non obcaecati earum quos illum quam
                 inventore aliquam.
               </p>
-              <span className="sosial-icons">
+              <span className="footer-social-icons">
                 <p>
                   <FaFacebookSquare size={30} />
                 </p>

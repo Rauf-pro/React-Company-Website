@@ -5,6 +5,10 @@
     .testimonial-section {
         padding-top: 25px;
     }
+    .load-more-button {
+        width: auto !important;
+        
+    }
 }
 .content-card {
     margin-top: 50px;

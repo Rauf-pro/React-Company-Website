@@ -8,11 +8,19 @@
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-.sosial-icons {
+.footer-social-icons {
     display: flex;
     color: orange;
     cursor: pointer;
     gap: 10px;
+}
+.footer-social-icons p:hover{
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.footer-social-icons p:hover svg{
+    color: white;
+    transition: all 0.3s ease-in-out;
 }
 .footer-item li {
     color: white;
