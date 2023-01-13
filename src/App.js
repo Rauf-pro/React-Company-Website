@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, createContext } from "react";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
@@ -14,21 +14,32 @@ import Video from "./components/Video/Video";
 import Career from "./components/Career/Career";
 import NavbarMobileView from "./components/Navbar/NavbarMobileView";
 
+export const ThemeContext = createContext(null);
+
 const App = () => {
+  const [theme, setTheme] = useState("light");
+
+  const handleChangeTeam = () => {
+    setTheme((current) => (current === "light" ? "dark" : "light"));
+  };
+
   return (
-    <>
+    <ThemeContext.Provider value={{ theme, handleChangeTeam }}>
       <Navbar />
-      <NavbarMobileView/>
+      <NavbarMobileView />
       <Home />
-      <About />
-      <Service />
-      <Career/>
-      <Video/>
-      <Team/>
-      <Testimonial />
-      <Feedback/>
+      <div className="main-theme-compo" id={theme}>
+        <About />
+        <Service />
+        <Career />
+        <Video />
+        <Team />
+        <Testimonial />
+        <Feedback />
+      </div>
+      
       <Subscription />
-      <Footer/>
+      <Footer />
       <ScrollToTop
         color="white"
         smooth
@@ -36,7 +47,7 @@ const App = () => {
         width="20"
         style={{ borderRadius: "90px", backgroundColor: "#38004c" }}
       />
-    </>
+    </ThemeContext.Provider>
   );
 };
 
