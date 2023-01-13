@@ -1,0 +1,18 @@
+.contact-section{
+    height: 70vh;
+    margin-top: 40px;
+    position: relative;
+}
+
+.image-class{
+    content: '';
+    background: url('https://images.pexels.com/photos/887751/pexels-photo-887751.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center/cover;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+   
+    
+}

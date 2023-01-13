@@ -7,12 +7,14 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import Subscription from "./components/Subscription/Subscription";
 import Footer from "./components/Footer/Footer";
 import Team from "./components/Team/Team";
-import ScrollToTop from "react-scroll-to-top";
-import "./App.css";
 import Feedback from "./components/Feedback/Feedback";
 import Video from "./components/Video/Video";
 import Career from "./components/Career/Career";
 import NavbarMobileView from "./components/Navbar/NavbarMobileView";
+import Contact from "./components/Contact/Contact";
+import ScrollToTop from "react-scroll-to-top";
+import "./App.css";
+
 
 export const ThemeContext = createContext(null);
 
@@ -26,7 +28,7 @@ const App = () => {
   return (
     <ThemeContext.Provider value={{ theme, handleChangeTeam }}>
       <Navbar />
-      <NavbarMobileView />
+      <NavbarMobileView theme={theme} handleChangeTeam={handleChangeTeam} />
       <Home theme={theme} handleChangeTeam={handleChangeTeam}/>
       <div className="main-theme-compo" id={theme}>
         <About />
@@ -36,6 +38,7 @@ const App = () => {
         <Team />
         <Testimonial />
         <Feedback />
+        <Contact/>
       </div>
 
       <Subscription />
