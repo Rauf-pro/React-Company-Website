@@ -27,7 +27,7 @@ const App = () => {
     <ThemeContext.Provider value={{ theme, handleChangeTeam }}>
       <Navbar />
       <NavbarMobileView />
-      <Home />
+      <Home theme={theme} handleChangeTeam={handleChangeTeam}/>
       <div className="main-theme-compo" id={theme}>
         <About />
         <Service />
@@ -37,7 +37,7 @@ const App = () => {
         <Testimonial />
         <Feedback />
       </div>
-      
+
       <Subscription />
       <Footer />
       <ScrollToTop
