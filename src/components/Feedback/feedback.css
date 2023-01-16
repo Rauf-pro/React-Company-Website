@@ -1,6 +1,7 @@
 .feedback-slider {
     height: 80vh;
-    margin-top: 30px;
+    margin-top: 50px;
+    
 }
 #dark .feedback-slider {
     color: white;
@@ -49,10 +50,24 @@
 .slick-prev:before{
     font-size: 30px;
     color: #ff854c!important;
+    
+}
+@media screen and (max-width:1000px){
+    .slick-prev:before{
+        display: none;
+     
+    }
 }
 .slick-next:before{
     font-size: 30px;
     color: #ff854c!important;
+ 
+}
+@media screen and (max-width:1000px){
+    .slick-next:before{
+        display: none;
+     
+    }
 }
 
 .slick-disable{

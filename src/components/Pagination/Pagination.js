@@ -20,7 +20,7 @@ const Pagination = ({handlePageClick, pageCount}) => {
         previousClassName='previous-button'
         nextClassName='next-button'
         pageLinkClassName='selected-page'
-        pageRangeDisplayed={5}
+        pageRangeDisplayed={3}
         pageCount={pageCount}
         previousLabel="Previous"
         
