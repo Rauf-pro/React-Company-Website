@@ -50,7 +50,7 @@ const Navbar = () => {
         </li>
 
         <li className="nav-item">
-        <Link
+          <Link
             to="career"
             spy={true}
             smooth={true}
@@ -61,7 +61,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
-        <Link
+          <Link
             to="video"
             spy={true}
             smooth={true}
@@ -72,13 +72,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li className="nav-item">
-        <Link
-            to="team"
-            spy={true}
-            smooth={true}
-            offset={-100}
-            duration={100}
-          >
+          <Link to="team" spy={true} smooth={true} offset={-100} duration={100}>
             Team
           </Link>
         </li>
@@ -95,7 +89,7 @@ const Navbar = () => {
         </li>
 
         <li className="nav-item">
-        <Link
+          <Link
             to="feedback"
             spy={true}
             smooth={true}
@@ -105,8 +99,10 @@ const Navbar = () => {
             Feedback
           </Link>
         </li>
-       
-        <li className="nav-item"> <Link
+
+        <li className="nav-item">
+          {" "}
+          <Link
             to="contact"
             spy={true}
             smooth={true}
@@ -114,8 +110,11 @@ const Navbar = () => {
             duration={100}
           >
             Contact
-          </Link></li>
-        <li className="nav-item"> <Link
+          </Link>
+        </li>
+        <li className="nav-item">
+          {" "}
+          <Link
             to="subscription"
             spy={true}
             smooth={true}
@@ -123,7 +122,8 @@ const Navbar = () => {
             duration={100}
           >
             Subscription
-          </Link></li>
+          </Link>
+        </li>
       </ul>
     </nav>
   );
